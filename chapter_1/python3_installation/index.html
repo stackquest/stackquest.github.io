@@ -1,0 +1,988 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.5">
+    
+    
+      
+        <title>പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍ - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ee0f47ba.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Gayathri";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" class="md-header__button md-logo" aria-label="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" class="md-nav__button md-logo" aria-label="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. പൈത്തണ്‍ ആമുഖം
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. പൈത്തണ്‍ ആമുഖം" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. പൈത്തണ്‍ ആമുഖം
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_introduction/" class="md-nav__link">
+        പൈത്തണ്‍ ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_features/" class="md-nav__link">
+        പൈത്തണ്‍ സവിശേഷതകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    വിന്‍ഡോസ്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ലിനക്സ് ഡിസ്ട്രിബ്യൂഷന്‍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    മാക്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ഓര്‍ത്ത് വെക്കാന്‍
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_run_python_program/" class="md-nav__link">
+        പൈത്തണ്‍ കോഡ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual_studio_code_setup/" class="md-nav__link">
+        വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming_terminologies/" class="md-nav__link">
+        പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../know_more/" class="md-nav__link">
+        അധിക വായനയ്ക്ക്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. ഓപ്പറേറ്ററുകള്‍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. ഓപ്പറേറ്ററുകള്‍" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. ഓപ്പറേറ്ററുകള്‍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_1_arithmetic_operators/" class="md-nav__link">
+        അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_2_comparison_operators/" class="md-nav__link">
+        കംപാരിസണ്‍ ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_3_assignment_operators/" class="md-nav__link">
+        അസൈന്‍മെന്റ് ഓപ്പറേറ്റര്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_4_logical_operators/" class="md-nav__link">
+        ലോജിക്കല്‍ ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_5_bitwise_operators/" class="md-nav__link">
+        ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_6_membership_operators/" class="md-nav__link">
+        മെമ്പര്‍ഷിപ്പ് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_7_identity_operators/" class="md-nav__link">
+        ഐഡന്റിറ്റി ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          3. ഡാറ്റാടൈപ്പുകള്‍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="3. ഡാറ്റാടൈപ്പുകള്‍" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3. ഡാറ്റാടൈപ്പുകള്‍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/numeric/" class="md-nav__link">
+        ന്യൂമെറിക്കല്‍ ഡാറ്റടൈപ്പുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/text_type/" class="md-nav__link">
+        ടെക്സ്റ്റ് ടൈപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          സീക്വന്‍സ് ടൈപ്പ്
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="സീക്വന്‍സ് ടൈപ്പ്" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          സീക്വന്‍സ് ടൈപ്പ്
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/sequence_types/" class="md-nav__link">
+        സീക്വന്‍സ് ടൈപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/list/" class="md-nav__link">
+        ലിസ്റ്റ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/tuple/" class="md-nav__link">
+        ടപ്പിള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/range/" class="md-nav__link">
+        റേഞ്ച്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          അനുബന്ധം
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="അനുബന്ധം" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          അനുബന്ധം
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/number_system/" class="md-nav__link">
+        നമ്പര്‍ സിസ്റ്റം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/not_is_not/" class="md-nav__link">
+        ബിറ്റ്‌വൈസ് നോട്ട്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/valkkashnam/" class="md-nav__link">
+        വാല്‍ക്കഷ്ണം
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    വിന്‍ഡോസ്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ലിനക്സ് ഡിസ്ട്രിബ്യൂഷന്‍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    മാക്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ഓര്‍ത്ത് വെക്കാന്‍
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍</h1>
+
+<h3 id="_1">വിന്‍ഡോസ്</h3>
+<p>വിന്‍ഡോസ് മെഷീനുകളില്‍ പൈത്തണ്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ വളരെ എളുപ്പമാണ്. പൈത്തന്റെ <a href="https://www.python.org/">ഒഫീഷ്യല്‍ വെബ്സൈറ്റ്</a> സന്ദര്‍ശിക്കുക. ഡൌണ്‍ലോഡ്സ് (Downloads) എന്ന മെനുവില്‍ മൌസ് ഹോവര്‍ ചെയ്യുക. നിങ്ങള്‍ക്ക് അവിടെ നിന്നും ഏറ്റവും പുതിയ പൈത്തണ്‍ വേര്‍ഷന്‍ ഡൌണ്‍ലോഡ് ചെയ്യാവുന്നതാണ്. നിങ്ങള്‍ക്ക് പഴയ പൈത്തണ്‍ വേര്‍ഷന്‍ ആണ് വേണ്ടത് എങ്കില്‍ <a href="https://www.python.org/downloads/">View the full list of downloads</a> എന്ന കണ്ണിയില്‍ ക്ലിക്ക് ചെയ്യുക.
+<img alt="പൈത്തണ്‍ ഡൌണ്‍ലോഡ് 1" src="/chapter_1/images/installation.png" /></p>
+<p>ഇപ്പോള്‍ നിങ്ങള്‍ <a href="https://www.python.org/downloads">https://www.python.org/downloads</a> എന്ന വെബ് പേജിലേക്ക് നീങ്ങുന്നതാണ്. അവിടെ നിന്നും നിങ്ങള്‍ക്ക് പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഡൌണ്‍ലോഡ് ചെയ്യാവുന്നതാണ്.</p>
+<ol>
+<li>പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഡൌണ്‍ലോഡ് ചെയ്തതിന് ശേഷം ഡൌണ്‍ലോഡ്സില്‍ ഉള്ള പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഫയലില്‍ ഡബിള്‍ ക്ലിക്ക് ചെയ്യുക.
+<img alt="പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഫയല്‍" src="/chapter_1/images/python_icon.png" /></li>
+<li>അപ്പോള്‍ തുറന്നു വരുന്ന റണ്‍ ഡയലോഗ് ബോക്സിലെ റണ്‍ ബട്ടണില്‍ ക്ലിക്ക് ചെയ്യുക
+<img alt="റണ്‍ ഡയലോഗ് ബോക്സ്" src="/chapter_1/images/python_run.png" /></li>
+<li>അടുത്തതായി തുറന്നുവരുന്ന ഇന്‍സ്റ്റോളേഷന്‍ സെറ്റപ്പ് വിസാര്‍ഡില്‍ <code>Add Python to PATH</code> എന്നുള്ള ചെക്ബോക്സ് ചെക്ക് ചെയ്യുക. അതിനുശേഷം മാത്രം Install Now ക്ലിക്ക് ചെയ്യുക.
+<img alt="പൈത്തണ്‍ ഇന്‍സ്റ്റോള്‍" src="/chapter_1/images/python_install.png" /></li>
+<li>ഇന്‍സ്റ്റോളേഷന് ശേഷം കമാന്‍ഡ് പ്രോംപ്റ്റ് തുറക്കുക. അതിന് ശേഷം ചുവടെയുള്ള കമാന്‍ഡ് അടിക്കുക:</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python --version
+</code></pre></div>
+നിങ്ങള്‍ക്ക് ലഭിക്കുന്ന ഔട്ട്പുട്ട് ചുവടെ കാണുന്ന രീതിയില്‍ നിങ്ങള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്ത വേര്‍ഷന്‍ ആണെങ്കില്‍ പൈത്തണ്‍ നിങ്ങളുടെ സിസ്റ്റത്തില്‍ വിജയകരമായി ഇന്‍സ്റ്റോള്‍ ആയിട്ടുണ്ട്.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Python 3.9.2
+</code></pre></div>
+<h3 id="_2">ലിനക്സ് ഡിസ്ട്രിബ്യൂഷന്‍</h3>
+<p>മിക്കവാറും ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ പൈത്തണ്‍ 2-ഉം പൈത്തണ്‍ 3-യും പ്രീഇന്‍സ്റ്റോള്‍ഡ് ആയിരിയ്ക്കും. നിങ്ങളുടെ സിസ്റ്റത്തില്‍ പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടുണ്ട് എന്ന് ഉറപ്പ് വരുത്താനായി</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3 --version
+</code></pre></div>
+<p>എന്ന കമാന്‍ഡ് ഉപയോഗിക്കുക. നിങ്ങളുടെ സിസ്റ്റത്തില്‍ ഇന്‍സ്റ്റോള്‍ ആയിരിക്കുന്ന പൈത്തണ്‍ വേര്‍ഷന്‍ ചുവടെയുള്ളത് പോലെ കാണാന്‍ ആകുന്നുണ്ട് എങ്കില്‍ പൈത്തണ്‍ സിസ്റ്റത്തില്‍ മുന്നേ ഇന്‍സ്റ്റോള്‍ ചെയ്തതാണ്.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Python 3.9.2
+</code></pre></div>
+<p><strong><code>python --vesion</code> എന്ന കമാന്‍ഡ് വിന്‍ഡോസ് സിസ്റ്റത്തില്‍ ഉപയോഗിച്ചതിന് പകരം ഇവിടെ <code>python3 --vesion</code> എന്ന കമാന്‍ഡ് ഉപയോഗിക്കാനുള്ള കാരണം ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ പൈത്തണ്‍ 2-ഉം ചിലപ്പോള്‍ പ്രീഇന്‍സ്റ്റോള്‍ ആയിരിക്കാനുള്ള സാധ്യത ഉണ്ട്. അതിനാല്‍ തന്നെ <code>python</code> എന്ന കമാന്‍ഡ് പൈത്തണ്‍ 2-വിനെയും <code>python3</code> എന്നത് പൈത്തണ്‍ 3-നെയുമാണ് സൂചിപ്പിക്കുന്നത്.</strong></p>
+<blockquote>
+<p>ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ <code>python 3</code>-യ്ക്കു <code>python</code> എന്ന മറ്റൊരു പേര് കമാന്‍ഡ് ലൈനില്‍ ഉപയോഗിക്കാനായി ബാഷ് പ്രൊഫൈലില്‍ (.bashrc ഫയലില്‍) എലിയാസ് (alias) അഥവാ മറ്റൊരു പേര്‍ നിര്‍മിക്കണം. അത് ചര്‍ച്ചയ്ക്ക് പുറത്തുള്ള കാര്യമായതിനാല്‍ നിങ്ങള്‍ സ്റ്റാക്ക് ഒവേര്‍ഫ്ലോയിലെ <a href="https://stackoverflow.com/questions/35435517/creating-an-alias-for-python3">ഈ ചോദ്യവും ഉത്തരവും</a> പരിശോധിയ്ക്കുക.</p>
+</blockquote>
+<p>എന്നാല്‍ മറ്റൊരു ഔട്ട്പുട്ട് ആണ് ഈ കമാന്‍ഡ് നല്‍കുന്നത് എങ്കില്‍ നിങ്ങള്‍ക്ക്</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo apt-get install python3.x
+</code></pre></div>
+<p>എന്ന കമാന്‍ഡ് ഉപയോഗിച്ച് പൈത്തണ്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാം. **ഇവിടെ 3.x-ലെ x പ്രതിനിധീകരിക്കുന്നത് പൈത്തണ്‍ മേജര്‍ വേര്‍ഷന്‍ ആണെന്ന് ഓര്‍ക്കുക. ഉദാഹരണാമായി:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo apt-get install python3.8
+</code></pre></div>
+<h3 id="_3">മാക്</h3>
+<p>ക്ഷമിയ്ക്കുക, ഞാന്‍ ഇതേ വരെ മാക് സിസ്റ്റം ഉപയോഗിച്ചിട്ടില്ല. ഉപയോഗിച്ചിട്ടുള്ളവര്‍ക്ക് ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടത് എങ്ങനെയെന്ന് പറയാം. നിങ്ങള്‍ക്കും ഈ എഴുത്ത് പൂര്‍ണമാക്കാന്‍ സഹകരിക്കാവുന്നതാണ്.</p>
+<h3 id="_4">ഓര്‍ത്ത് വെക്കാന്‍</h3>
+<blockquote>
+<p>പൈത്തന്റെ ഒഫീഷ്യല്‍ വെബ്സൈറ്റില്‍ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യുന്ന ഈയൊരു പൈത്തണ്‍ സി പ്രോഗ്രാമ്മിങ് ഭാഷ ഉപയോഗിച്ച് നിര്‍മിച്ചതാണ്. ഇത് സി പൈത്തണ്‍ (CPython) എന്നാണ് അറിയപ്പെടുന്നത്. ഇതേപ്പോലെ തന്നെ മറ്റ് പ്രോഗ്രാമ്മിങ് ഭാഷകള്‍ ഉപയോഗിച്ച് നിര്‍മിച്ചിരിക്കുന്ന പൈത്തണ്‍ ഇംപ്ലിമെന്‍റേഷനുകള്‍ ഏതൊക്കെയാണെന്ന് താഴെ പട്ടികപ്പെടുത്തിയിട്ടുണ്ട്.</p>
+<table>
+<thead>
+<tr>
+<th align="center">പ്രോഗ്രാമ്മിങ് ഭാഷ</th>
+<th align="center">പൈത്തണ്‍ ഇംപ്ലിമെന്‍റേഷന്‍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">സി</td>
+<td align="center">സി പൈത്തണ്‍ (CPython)</td>
+</tr>
+<tr>
+<td align="center">ജാവ</td>
+<td align="center">ജെ പൈത്തണ്‍ (JPython)</td>
+</tr>
+<tr>
+<td align="center">സി#</td>
+<td align="center">അയണ്‍ പൈത്തണ്‍ (Iron Python)</td>
+</tr>
+<tr>
+<td align="center">റസ്റ്റ്</td>
+<td align="center">റസ്റ്റ് പൈത്തണ്‍ (Rust Python)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../python_features/" class="md-footer__link md-footer__link--prev" aria-label="Previous: പൈത്തണ്‍ സവിശേഷതകള്‍" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              പൈത്തണ്‍ സവിശേഷതകള്‍
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../how_to_run_python_program/" class="md-footer__link md-footer__link--next" aria-label="Next: പൈത്തണ്‍ കോഡ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              പൈത്തണ്‍ കോഡ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5e13d264.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

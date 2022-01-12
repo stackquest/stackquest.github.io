@@ -1,0 +1,1128 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.5">
+    
+    
+      
+        <title>പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ee0f47ba.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Gayathri";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#identifier" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" class="md-header__button md-logo" aria-label="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" class="md-nav__button md-logo" aria-label="പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. പൈത്തണ്‍ ആമുഖം
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. പൈത്തണ്‍ ആമുഖം" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. പൈത്തണ്‍ ആമുഖം
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_introduction/" class="md-nav__link">
+        പൈത്തണ്‍ ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_features/" class="md-nav__link">
+        പൈത്തണ്‍ സവിശേഷതകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python3_installation/" class="md-nav__link">
+        പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_run_python_program/" class="md-nav__link">
+        പൈത്തണ്‍ കോഡ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual_studio_code_setup/" class="md-nav__link">
+        വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identifier" class="md-nav__link">
+    ഐഡന്റിഫയര്‍ (Identifier)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords" class="md-nav__link">
+    കീവേഡുകള്‍ (Keywords)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    വേരിയബിള്‍
+  </a>
+  
+    <nav class="md-nav" aria-label="വേരിയബിള്‍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    വേരിയബിള്‍ അസ്സൈന്‍മെന്റ്
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    കമെന്റ്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ഡോക്സ്ട്രിംഗ്
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../know_more/" class="md-nav__link">
+        അധിക വായനയ്ക്ക്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. ഓപ്പറേറ്ററുകള്‍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. ഓപ്പറേറ്ററുകള്‍" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. ഓപ്പറേറ്ററുകള്‍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_1_arithmetic_operators/" class="md-nav__link">
+        അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_2_comparison_operators/" class="md-nav__link">
+        കംപാരിസണ്‍ ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_3_assignment_operators/" class="md-nav__link">
+        അസൈന്‍മെന്റ് ഓപ്പറേറ്റര്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_4_logical_operators/" class="md-nav__link">
+        ലോജിക്കല്‍ ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_5_bitwise_operators/" class="md-nav__link">
+        ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_6_membership_operators/" class="md-nav__link">
+        മെമ്പര്‍ഷിപ്പ് ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2_7_identity_operators/" class="md-nav__link">
+        ഐഡന്റിറ്റി ഓപ്പറേറ്ററുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          3. ഡാറ്റാടൈപ്പുകള്‍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="3. ഡാറ്റാടൈപ്പുകള്‍" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3. ഡാറ്റാടൈപ്പുകള്‍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/numeric/" class="md-nav__link">
+        ന്യൂമെറിക്കല്‍ ഡാറ്റടൈപ്പുകള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/text_type/" class="md-nav__link">
+        ടെക്സ്റ്റ് ടൈപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          സീക്വന്‍സ് ടൈപ്പ്
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="സീക്വന്‍സ് ടൈപ്പ്" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          സീക്വന്‍സ് ടൈപ്പ്
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/sequence_types/" class="md-nav__link">
+        സീക്വന്‍സ് ടൈപ്പ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/list/" class="md-nav__link">
+        ലിസ്റ്റ്
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/tuple/" class="md-nav__link">
+        ടപ്പിള്‍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/range/" class="md-nav__link">
+        റേഞ്ച്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          അനുബന്ധം
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="അനുബന്ധം" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          അനുബന്ധം
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/introduction/" class="md-nav__link">
+        ആമുഖം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/number_system/" class="md-nav__link">
+        നമ്പര്‍ സിസ്റ്റം
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/not_is_not/" class="md-nav__link">
+        ബിറ്റ്‌വൈസ് നോട്ട്
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/valkkashnam/" class="md-nav__link">
+        വാല്‍ക്കഷ്ണം
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identifier" class="md-nav__link">
+    ഐഡന്റിഫയര്‍ (Identifier)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords" class="md-nav__link">
+    കീവേഡുകള്‍ (Keywords)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    വേരിയബിള്‍
+  </a>
+  
+    <nav class="md-nav" aria-label="വേരിയബിള്‍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    വേരിയബിള്‍ അസ്സൈന്‍മെന്റ്
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    കമെന്റ്
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ഡോക്സ്ട്രിംഗ്
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത</h1>
+
+<h3 id="identifier">ഐഡന്റിഫയര്‍ (Identifier)</h3>
+<p>ഐഡന്റിഫയറുകള്‍ എന്നാല്‍ വേരിയബിള്‍, ഫംഗ്ഷന്‍, ക്ലാസ്, മൊഡ്യൂള്‍, ഒബ്ജെക്ടുകള്‍ തുടങ്ങിയവയ്ക്ക് പ്രോഗ്രാമ്മര്‍ നല്‍കുന്ന പേരാണ്. പൈത്തണ്‍ കേസ് സെന്‍സിറ്റീവ് (case sensitive) ആണ്. അതായത് ഇംഗ്ലിഷ് അക്ഷരമാലയിലെ ചെറിയക്ഷരങ്ങളെയും (Lower case letter) വലിയക്ഷരങ്ങളെയും (Upper Case Letter) വ്യത്യസ്ഥമായ അക്ഷരങ്ങള്‍ ആയാണ് പൈത്തണ്‍ കണക്കാക്കുന്നത്. ഐഡന്റിഫയറുകള്‍ ചുവടെപ്പറയുന്ന നിയമങ്ങള്‍ അനുസരിക്കണം:</p>
+<ol>
+<li>ഐഡന്റിഫയറുകളില്‍ ചെറിയക്ഷരങ്ങളോ ([a-z]) വലിയക്ഷരങ്ങളോ ([A-Z]) അണ്ടര്‍സ്കോറോ (_) അക്കങ്ങളോ (0-9) ആണ് ഉപയോഗിക്കാവൂ. total എന്നുള്ളതും Total എന്നുള്ളതും രണ്ട് വ്യത്യസ്ഥങ്ങളായ ഐഡന്റിഫയര്‍ ആണെന്ന് ഓര്‍മിക്കുമല്ലോ.</li>
+<li>പൈത്തണ്‍ നീക്കിവെച്ചിരിക്കുന്ന കീവേഡുകള്‍ ഐഡന്റിഫയര്‍ ആയി ഉപയോഗിക്കരുത് (കീവേഡുകള്‍ തൊട്ടടുത്ത ഭാഗത്ത് തന്നെ ചര്‍ച്ച ചെയ്യുന്നുണ്ട്).</li>
+<li>ഐഡന്റിഫയര്‍ അക്കങ്ങളില്‍ തുടങ്ങരുത്. ഉദാഹരമായി <code>2times</code> എന്നുള്ളത് അസാധുവായ ഒരു ഐഡന്റിഫയര്‍ ആണ്.</li>
+<li>@, !, #, $, %, ^, എന്നിങ്ങനെയുള്ള ചിഹ്നങ്ങള്‍ ഐഡന്റിഫയറില്‍ ഉപയോഗിക്കരുത്. ഉദാഹരണമായി #total എന്നുള്ളത് അസാധുവായ ഒരു ഐഡന്റിഫയര്‍ ആണ്.</li>
+<li>ഐഡന്റിഫയറിന് എത്ര നീളവും ആകാം.</li>
+</ol>
+<blockquote>
+<p>ആദ്യം പറഞ്ഞിരിക്കുന്ന നിയമത്തില്‍ ഒരു തിരുത്ത് ഉണ്ട്. ഇംഗ്ലിഷ് ബുക്കുകള്‍ ആണ് വിപണിയില്‍ ലഭ്യം. അതിനാല്‍ ആണ് മിക്കവാറും ബുക്കുകളില്‍ ഐഡന്റിഫയര്‍ ഇങ്ങനെയാകണം എന്നൊരു ലിഖിതമായ നിയമം നിലനില്‍ക്കുന്നത്. എന്നാല്‍ സത്യമെന്തെന്നാല്‍ നമുക്ക് യൂണീക്കോഡില്‍ എഴുതപ്പെട്ട ഏത് അക്ഷരവും വാക്കുകളും പൈത്തണ്‍ ഐഡന്റിഫയര്‍ ആയി ഉപയോഗിക്കാം. ഉദാഹരണമായി ചുവടെയുള്ള കോഡ് ശ്രദ്ധിയ്ക്കുക. മലയാളം വാക്കുകള്‍ ചുവടെ ഐഡന്റിഫയര്‍ ആയി ഉപയോഗിച്ചിരിക്കുന്നത് നിങ്ങള്‍ക്ക് കാണാന്‍ ആകുന്നതാണ്. നിങ്ങള്‍ക്ക് പ്രതീക്ഷിച്ച ഔട്ട്പുട്ട് ചുവടെയുള്ള പ്രോഗ്രാമ്മില്‍ നിന്നും ലഭിക്കുന്നുണ്ട് എന്ന് നിങ്ങള്‍ക്ക് വിലയിരുത്താവുന്നതാണ് (ഈയൊരു കാര്യം വിലയിരുത്തുന്നതിന് മുമ്പ് ടെര്‍മിനല്‍/ കമാന്‍ഡ് പ്രോംപ്റ്റ്/ കോഡ് എഡിറ്റര്‍/ ഐ‌.ഡി‌.എല്‍.‌ഇ തുടങ്ങിയവ മലയാളം യൂണീക്കോഡ് പിന്തുണയുള്ള ഒരു ഫോണ്ടിലേക്ക് മാറ്റുന്നത് നന്നായിരിക്കും.). </p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">പച്ച_മാങ്ങ</span> <span class="o">=</span> <span class="mi">10</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">പഴുത്ത_മാങ്ങ</span> <span class="o">=</span> <span class="mi">20</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">ആകെ_മാങ്ങ</span> <span class="o">=</span> <span class="n">പച്ച_മാങ്ങ</span> <span class="o">+</span> <span class="n">പഴുത്ത_മാങ്ങ</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">ആകെ_മാങ്ങ</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>പൈത്തണ്‍ ഐഡന്റിഫയറുകളുടെ പേരില്‍ ലോകത്താകെയുള്ള പ്രോഗ്രാമ്മര്‍മാര്‍ പിന്തുടരുന്ന കുറച്ചു ആചാരങ്ങള്‍ (conventions) ഉണ്ട്. അത് ചുവടെ ചര്‍ച്ച ചെയ്യുന്നു:</strong></p>
+<ul>
+<li>ക്ലാസ്സിന്റെ പേര്‍ ഇംഗ്ലിഷ് വലിയക്ഷരത്തില്‍ തുടങ്ങണം. മറ്റെല്ലാ ഐഡന്റിഫയറുകളുടെയും പേരിനായി ഇംഗ്ലിഷിലെ ചെറിയക്ഷരങ്ങള്‍ ഉപയോഗിക്കണം.</li>
+<li>ഐഡന്റിഫയര്‍ തുടങ്ങുന്നത് ഒറ്റ അണ്ടര്‍സ്കോറില്‍ ആണെങ്കില്‍ അത് പ്രൈവറ്റ് ആണ്. ഉദാഹരണമായി _data.</li>
+<li>ഐഡന്റിഫയര്‍ തുടങ്ങുന്നത് രണ്ട് അണ്ടര്‍സ്കോറില്‍ ആണെങ്കില്‍ അത് സ്ട്രോങ്‌ലി പ്രൈവറ്റ് ആണ്. ഉദാഹരണമായി __protected_data.</li>
+<li>ഒരു ഐഡന്റിഫയറിന്റെ തുടക്കത്തിലും ഒടുക്കത്തിലും രണ്ട് അണ്ടര്‍സ്കോര്‍ ഉണ്ടെങ്കില്‍ അത് പൈത്തണ്‍ സ്വന്തം പ്രവര്‍ത്തനങ്ങള്‍ക്കായി നീക്കിവെച്ചിരിക്കുന്ന ഐഡന്റിഫയര്‍ ആയിരിയ്ക്കും. ഉദാഹരണം <code>__init__</code>.</li>
+</ul>
+<h3 id="keywords">കീവേഡുകള്‍ (Keywords)</h3>
+<ul>
+<li>പ്രോഗ്രാമ്മിങ് ഭാഷകളില്‍ അതാതിന് മാത്രം ഉപയോഗിക്കാനായി നീക്കിവെച്ചിരിക്കുന്ന പ്രോഗ്രാമ്മറിന് ഐഡന്റിഫയര്‍ ഉപയോഗിക്കാനാവാത്ത ചില പദങ്ങളാണ് കീവേഡുകള്‍. പൈത്തണ്‍ 3.9-ല്‍ 36 കീവേര്‍ഡുകള്‍ ഉണ്ട്. പൈത്തണിലെ കീവേര്‍ഡുകള്‍ കാണുവാനായി:</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">keyword</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">[</span><span class="s1">&#39;False&#39;</span><span class="p">,</span> <span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;__peg_parser__&#39;</span><span class="p">,</span> <span class="s1">&#39;and&#39;</span><span class="p">,</span> <span class="s1">&#39;as&#39;</span><span class="p">,</span> <span class="s1">&#39;assert&#39;</span><span class="p">,</span> <span class="s1">&#39;async&#39;</span><span class="p">,</span> <span class="s1">&#39;await&#39;</span><span class="p">,</span> <span class="s1">&#39;break&#39;</span><span class="p">,</span> <span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;continue&#39;</span><span class="p">,</span> <span class="s1">&#39;def&#39;</span><span class="p">,</span> <span class="s1">&#39;del&#39;</span><span class="p">,</span> <span class="s1">&#39;elif&#39;</span><span class="p">,</span> <span class="s1">&#39;else&#39;</span><span class="p">,</span> <span class="s1">&#39;except&#39;</span><span class="p">,</span> <span class="s1">&#39;finally&#39;</span><span class="p">,</span> <span class="s1">&#39;for&#39;</span><span class="p">,</span> <span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="s1">&#39;global&#39;</span><span class="p">,</span> <span class="s1">&#39;if&#39;</span><span class="p">,</span> <span class="s1">&#39;import&#39;</span><span class="p">,</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;lambda&#39;</span><span class="p">,</span> <span class="s1">&#39;nonlocal&#39;</span><span class="p">,</span> <span class="s1">&#39;not&#39;</span><span class="p">,</span> <span class="s1">&#39;or&#39;</span><span class="p">,</span> <span class="s1">&#39;pass&#39;</span><span class="p">,</span> <span class="s1">&#39;raise&#39;</span><span class="p">,</span> <span class="s1">&#39;return&#39;</span><span class="p">,</span> <span class="s1">&#39;try&#39;</span><span class="p">,</span> <span class="s1">&#39;while&#39;</span><span class="p">,</span> <span class="s1">&#39;with&#39;</span><span class="p">,</span> <span class="s1">&#39;yield&#39;</span><span class="p">]</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="mi">36</span>
+</code></pre></div>
+മുകളിലെ ഓരോ കീവേര്‍ഡും നമ്മള്‍ വിശദമായി ഈയൊരു പുസ്തകത്തിന്റെ പല ഭാഗങ്ങളിലായി ചര്‍ച്ച ചെയ്യുന്നതാണ്. ചുവടെയുള്ള പട്ടികയിലും കീവേഡുകള്‍ നല്കിയിട്ടുണ്ട്.</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">False</td>
+<td align="center">None</td>
+<td align="center">True</td>
+<td align="center"><code>__peg_parser__</code></td>
+<td align="center">and</td>
+<td align="center">as</td>
+<td align="center">assert</td>
+</tr>
+<tr>
+<td align="center">async</td>
+<td align="center">await</td>
+<td align="center">break</td>
+<td align="center">class</td>
+<td align="center">continue</td>
+<td align="center">def</td>
+<td align="center">del</td>
+</tr>
+<tr>
+<td align="center">elif</td>
+<td align="center">else</td>
+<td align="center">except</td>
+<td align="center">finally</td>
+<td align="center">for</td>
+<td align="center">from</td>
+<td align="center">global</td>
+</tr>
+<tr>
+<td align="center">if</td>
+<td align="center">import</td>
+<td align="center">in</td>
+<td align="center">is</td>
+<td align="center">lambda</td>
+<td align="center">nonlocal</td>
+<td align="center">not</td>
+</tr>
+<tr>
+<td align="center">or</td>
+<td align="center">pass</td>
+<td align="center">raise</td>
+<td align="center">return</td>
+<td align="center">try</td>
+<td align="center">while</td>
+<td align="center">with</td>
+</tr>
+<tr>
+<td align="center">yield</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_1">വേരിയബിള്‍</h3>
+<p>നമ്മള്‍ പ്രോഗ്രാമ്മില്‍ ഉപയോഗിയ്ക്കുന്ന എല്ലാ വിവരങ്ങളും ഒബ്ജെക്ടുകളും നമ്മുടെ കംപ്യൂട്ടറിന്റെ റാമില്‍ ആയിരിയ്ക്കും സൂക്ഷിക്കപ്പെടുന്നത്. റാമിലേ ഈ ഡാറ്റ കൈകാര്യം ചെയ്യണം എങ്കില്‍ നമുക്ക് ഡാറ്റ സൂക്ഷിക്കപ്പെടുന്ന മെമ്മറി ലൊക്കേഷന്‍റെ അഡ്രസ്സ് അറിഞ്ഞിരിക്കണം. ഈ അഡ്രസ്സ് ഒരു പ്രോഗ്രാമ്മറിനെ സംബദ്ധിച്ച് ഓര്‍ത്തിരിക്കേണ്ടുന്ന ആവശ്യമില്ല. അപ്പോള്‍ മെമ്മറി ലൊക്കേഷന്റെ ഈ അഡ്രസ്സിന് പകരം പ്രോഗ്രാമില്‍ പ്രോഗ്രാമ്മാറിന് എളുപ്പത്തില്‍ ഓര്‍മയില്‍ സൂക്ഷിക്കാന്‍ പറ്റുന്ന പേരുകള്‍ അഥവാ ഐഡന്റിഫയറുകള്‍ ഉപയോഗിക്കാം. ഇങ്ങനെ മെമ്മറി അഡ്രസ്സിന് പകരം ഉപയോഗിയ്ക്കുന്ന പേരുകള്‍ ആണ് വേരിയബിളുകള്‍.</p>
+<ul>
+<li>പൈത്തണിലെ വേരിയബിളുകള്‍ നിങ്ങള്‍ രാവിലെ ചായ കുടിക്കുന്ന കപ്പ് പോലെയാണ്. നിങ്ങള്‍ക്ക് കുറച്ചു കഴിയുമ്പോള്‍ ആ കപ്പില്‍ കഞ്ഞിവെള്ളം കുടിക്കാം, പിന്നീട് ജ്യൂസ് കുടിക്കാം, കല്ല് നിറക്കാം 😜. അതായത് പൈത്തണ്‍ വേരിയബിളില്‍ നിങ്ങള്‍ക്ക് എന്ത് വേണമെങ്കിലും സംഭരിക്കാം. പൈത്തണ്‍ വേരിയബിളില്‍ നമുക്ക് ഏത് ഡാറ്റടൈപ്പ് വേണമെങ്കിലും സംഭരിക്കാം. എന്താണ് ഞാന്‍ ഇങ്ങനെ പറയാന്‍ കാരണം എന്ന് കൂടുതല്‍ വ്യക്തമായി നിങ്ങള്‍ക്ക് വഴിയേ മനസ്സിലാകും.</li>
+</ul>
+<h4 id="_2">വേരിയബിള്‍ അസ്സൈന്‍മെന്റ്</h4>
+<p>പൈത്തണില്‍ വേരിയബിള്‍ അസ്സൈന്‍ ചെയ്യുന്നത് ചുവടെക്കാണുന്ന രീതിയില്‍ ആണ്:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&gt;&gt;&gt;</span><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div>
+<ul>
+<li>ഇവിടെ <code>num</code> എന്നതാണ് വേരിയബിള്‍. num പോയിന്റ് ചെയ്യുന്നത് ഒരു മെമ്മറി ലൊക്കേഷനിലേക്ക് ആയിരിയ്ക്കും. ഈ മെമ്മറി ലൊക്കേഷന്‍ കാണുവാന്‍ നിങ്ങള്‍ക്ക് <code>id</code> എന്ന ബില്‍റ്റിന്‍ ഫംഗ്ഷന്‍ ഉപയോഗിക്കാവുന്നതാണ്.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">&gt;&gt;&gt;</span><span class="nb">id</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="mi">2314464488016</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+<ul>
+<li>ഇവിടെ <code>=</code> എന്നത് ഗണിതത്തില്‍ പരിചിതമായ സമം ആണെന്ന് തെറ്റിദ്ധരിക്കരുത്. ഇത് വലതു വശത്തുള്ള 10 എന്ന വാല്യൂ ഇടതു വശത്തെ <code>num</code> എന്ന വേരിയബിളിലേക്ക് ആരോപിക്കുകയാണ് (assign) ചെയ്യുന്നത്.</li>
+</ul>
+<h3 id="_3">കമെന്റ്</h3>
+<p>നമ്മള്‍ ഇന്നെഴുതുന്ന പ്രോഗ്രാം വളരെ നാളുകള്‍ക്ക് ശേഷം നോക്കുമ്പോള്‍ നമ്മള്‍ എന്ത് ഉദ്ദേശത്തിലാണ് എഴുതിയത് എന്ന് മനസ്സിലാക്കുക പ്രയാസമായിരിക്കും. ഈയൊരു പ്രശ്നം പരിഹരിക്കുകയാണ് പ്രോഗ്രാമ്മിലെ കമെന്റിന്റെ പ്രാഥമിക ലക്ഷ്യം. നമ്മള്‍ എഴുതുന്ന പ്രോഗ്രാമ്മില്‍ നമുക്ക് ഓരോ ലൈനും എന്ത് ഉദ്ദേശത്തിലാണ് എഴുതിയതെന്ന് പ്രോഗ്രാമ്മിന്റെ കൂടെ തന്നെ നമുക്ക് എഴുതാം. ഇങ്ങനെ എഴുതുന്ന കമെന്റുകള്‍ പൈത്തണ്‍ ഇന്റര്‍പ്രെട്ടര്‍ റീഡ് ചെയ്യുന്നത് ഒഴിവാക്കുന്നതിനാല്‍ കമെന്റുകള്‍ പ്രോഗ്രാമ്മിന്റെ പ്രവര്‍ത്തനത്തെ യാതൊരു തരത്തിലും ബാധിക്കില്ല. പൈത്തണില്‍ കമെന്റ് ആയി എഴുതുന്ന ഓരോ വരിക്കും മുന്നില്‍ <code>#</code> ചിഹ്നം കൊടുക്കേണ്ടതാണ്.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># here sum is initialized to zero</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<ul>
+<li>പ്രോഗ്രാമ്മാറിന് പ്രോഗ്രാമ്മിലെ ലൈനുകള്‍ എക്സിക്യൂട്ട് ചെയ്യേണ്ടുന്ന ആവശ്യം ഇല്ല എന്നു തോന്നുന്ന പക്ഷം ആ ഒരു ലൈനിന്റെ മുമ്പില്‍ <code>#</code> ഇട്ടുകൊണ്ട് ആ ലൈന്‍ എക്സിക്യൂട്ട് ചെയ്യുന്നത് ഒഴിവാക്കാവുന്നതാണ്.</li>
+</ul>
+<h3 id="_4">ഡോക്സ്ട്രിംഗ്</h3>
+<p>ഒന്നിലധികം ലൈനുകളില്‍ ആയി കമെന്റ് എഴുതേണ്ട സാഹചര്യങ്ങളില്‍, അതായത് ഒരു ഫംഗ്ഷനെപ്പറ്റിയോ ക്ലാസ്സിനെപ്പറ്റിയോ വിപുലമായ ഒരു നോട്ട് എഴുതേണ്ടുന്ന സാഹചര്യത്തില്‍ ആണ്‍ ഡോക്സ്ട്രിംഗ് ഉപയോഗിക്കുന്നത്. ചുവടെയുള്ള കോഡില്‍ മൂന്ന് ഉദ്ധരണികള്‍ക്ക് (""") ഉള്ളില്‍ എഴുതിയിരിക്കുന്നതാണ് ഡോക്സ്ട്രിംഗ്.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="sd">    The input parameters of function is `num` and `ret`.</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="sd">    The `ret` is by default `True`. If `ret` is `True` function returns</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="sd">    the square of number. Otherwise it will print out on console</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="k">if</span> <span class="n">ret</span><span class="p">:</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="k">return</span> <span class="n">num</span> <span class="o">**</span> <span class="mi">2</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">^2 = </span><span class="si">{</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">square</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">square</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<p>ഡോക്സ്ട്രിംഗ് എഴുത്തുന്നതിന്റെ പ്രധാന മെച്ചം കോഡ് എഡിറ്റര്‍ അല്ലെങ്കില്‍ ഐ.‌ഡി‌.എല്‍.‌ഇ-കളില്‍ (IDLE) നമ്മള്‍ എഴുതിയ ഫംഗ്ഷന് മുകളില്‍ മൌസ് ഹോവര്‍ ചെയ്യുമ്പോള്‍ ഈയൊരു ഡോക്സ്ട്രിംഗ് കാണാന്‍ ആകും (ചവടെയുള്ള ചിത്രം നിരീക്ഷിക്കുക). ഈയൊരു കാര്യം നമ്മള്‍ എഴുതിയ കോഡ് മറ്റുള്ളവര്‍ നോക്കുമ്പോള്‍ അവര്‍ക്ക് ആ ഒരു ഫംഗ്ഷനെക്കുറിച്ച് വളരെ എളുപ്പത്തില്‍ മനസ്സിലാക്കാന്‍ പ്രയോജനപ്പെടും.</p>
+<p><img alt="ഡോക്സ്ട്രിംഗ്" src="/chapter_1/images/docstring.png" /></p>
+<p>കൂടാതെ <code>help</code> ഫംഗ്ഷന്റെ സഹായത്തോടെ ഇന്ററാക്ടീവ് ഇന്റര്‍പ്രെട്ടറില്‍ നമുക്ക് ഈ ഫങ്ഷന്‍റെ ഡോക്യുമെന്റേഷന്‍ ചുവടെ നല്കിയിരിക്കുന്നത് പോലെ കാണാവുന്നതാണ്.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">F</span><span class="p">:</span>\<span class="n">MyPythonBook</span>\<span class="n">PythonPointsToPonder</span><span class="o">&gt;</span><span class="n">python</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Python</span> <span class="mf">3.9.6</span> <span class="p">(</span><span class="n">tags</span><span class="o">/</span><span class="n">v3</span><span class="mf">.9.6</span><span class="p">:</span><span class="n">db3ff76</span><span class="p">,</span> <span class="n">Jun</span> <span class="mi">28</span> <span class="mi">2021</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">26</span><span class="p">:</span><span class="mi">21</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="mf">.1929</span> <span class="mi">64</span> <span class="n">bit</span> <span class="p">(</span><span class="n">AMD64</span><span class="p">)]</span> <span class="n">on</span> <span class="n">win32</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">test</span> <span class="kn">import</span> <span class="n">square</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="mi">5</span><span class="o">^</span><span class="mi">2</span> <span class="o">=</span> <span class="mi">25</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">help</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">Help</span> <span class="n">on</span> <span class="n">function</span> <span class="n">square</span> <span class="ow">in</span> <span class="n">module</span> <span class="n">test</span><span class="p">:</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">square</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="n">The</span> <span class="nb">input</span> <span class="n">parameters</span> <span class="n">of</span> <span class="n">function</span> <span class="ow">is</span> <span class="err">`</span><span class="n">num</span><span class="err">`</span> <span class="ow">and</span> <span class="err">`</span><span class="n">ret</span><span class="err">`</span><span class="o">.</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">The</span> <span class="err">`</span><span class="n">ret</span><span class="err">`</span> <span class="ow">is</span> <span class="n">by</span> <span class="n">default</span> <span class="err">`</span><span class="kc">True</span><span class="err">`</span><span class="o">.</span> <span class="n">If</span> <span class="err">`</span><span class="n">ret</span><span class="err">`</span> <span class="ow">is</span> <span class="err">`</span><span class="kc">True</span><span class="err">`</span> <span class="n">function</span> <span class="n">returns</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">the</span> <span class="n">square</span> <span class="n">of</span> <span class="n">number</span><span class="o">.</span> <span class="n">Otherwise</span> <span class="n">it</span> <span class="n">will</span> <span class="nb">print</span> <span class="n">out</span> <span class="n">on</span> <span class="n">console</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../visual_studio_code_setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../know_more/" class="md-footer__link md-footer__link--next" aria-label="Next: അധിക വായനയ്ക്ക്" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              അധിക വായനയ്ക്ക്
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5e13d264.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
