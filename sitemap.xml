@@ -1,153 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/appendix/introduction/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/appendix/not_is_not/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/appendix/number_system/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_1_arithmetic_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_2_comparison_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_3_assignment_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_4_logical_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_5_bitwise_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_6_membership_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_7_identity_operators/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter2/2_introduction/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/dictionary/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/frozen_set/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/introduction/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/list/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/numeric/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/range/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/sequence_types/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/set/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/text_type/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter3/tuple/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter4/if_condition/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter4/introduction/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/how_to_run_python_program/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/know_more/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/programming_terminologies/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/python3_installation/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/python_features/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-01-13</lastmod>
+         <loc>https://stackquest.github.io/chapter_1/python_introduction/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://stackquest.github.io/chapter_1/visual_studio_code_setup/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://stackquest.github.io/misc/faq/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://stackquest.github.io/misc/valkkashnam/</loc>
+         <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
